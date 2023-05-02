@@ -1,9 +1,50 @@
 {
   "article": [
     {
+      "id": 1,
+      "LIB_ART": "kawther",
+      "prix": 254,
+      "categorie": {
+        "ID_CAT": "1",
+        "LIB_CAT": "ba"
+      }
+    },
+    {
       "id": 2,
-      "LIB_ART": "ali",
-      "prix": 57
+      "LIB_ART": "547",
+      "prix": 587,
+      "categorie": {
+        "ID_CAT": "1",
+        "LIB_CAT": "x1"
+      }
+    },
+    {
+      "id": 3,
+      "LIB_ART": "",
+      "prix": 0,
+      "categorie": {
+        "ID_CAT": 0,
+        "LIB_CAT": ""
+      }
+    },
+    {
+      "id": 4,
+      "LIB_ART": "khjh",
+      "prix": 1,
+      "categorie": {
+        "ID_CAT": "1",
+        "LIB_CAT": ""
+      }
+    }
+  ],
+  "Categorie": [
+    {
+      "ID_CAT": 1,
+      "LIB_CAT": "bannane"
+    },
+    {
+      "ID_CAT": 2,
+      "LIB_CAT": "banna"
     }
   ],
   "posts": [

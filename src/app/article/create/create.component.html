@@ -1,15 +1,36 @@
 <div class="container">
     <legend>Create Item</legend>
-    <form>
+    <form autocomplete="off">
       <div class="mb-3">
         <label for="txtName" class="form-label">Name</label>
-        <input type="text" name="name" [(ngModel)]="articleForm.LIB_ART" class="form-control" id="txtName" />
+        <input type="text" name="LIB_ART" [(ngModel)]="articleForm.LIB_ART" class="form-control" id="txtName"
+         ngModel name ="LIB_ART"
+        #LIB_ART="ngModel"
+        required />
+        <div class ="alert alert-danger" *ngIf="!prix.valid  "> vide</div>
       </div>
       <div class="mb-3">
         <label for="txtPrice" class="form-label">Prixe</label>
-        <input type="number" name="price" [(ngModel)] = "articleForm.prix" class="form-control" id="txtPrice" />
+        <input type="number" name="prix" [(ngModel)] = "articleForm.prix" class="form-control" id="txtPrice"
+        ngModel name ="prix"
+            #prix="ngModel"
+            required  />
+        <!--     <div class ="alert alert-danger" *ngIf="prix.touched  "> required</div>-->
+            <div class ="alert alert-danger" *ngIf="!prix.valid  "> vide</div>
       </div>
-      
+      <div class="mb-3" >
+        <label for="txtIdCategory" class="form-label">Categorie</label>
+        <select type="number" name="idcategory" [(ngModel)] = "articleForm.categorie.ID_CAT" class="form-control" id="txtIdCategory" >
+             
+          <option *ngFor="let item of allcategories" value={{item.ID_CAT}}> {{item.LIB_CAT}} </option>
+          </select>
+      <!-- <input type="number" name="idcategory" [(ngModel)] = "fruitForm.category.id" class="form-control" id="txtIdCategory" />-->
+      </div>      
+
       <button type="button" (click)="create()" class="btn btn-primary">Create</button>
     </form>
   </div>
+
+
+
+  

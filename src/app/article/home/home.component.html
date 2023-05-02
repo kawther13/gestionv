@@ -1,11 +1,15 @@
 <div class="container">
     <table class="table">
       <thead>
+        <div class="col col-md-4 offset-md-4">
+        <tr><a class="btn btn-primary" href="article/create">[+]</a></tr></div>
         <tr>
+
           <th scope="col">Id</th>
           <th scope="col">Libellé</th>
           <th scope="col">Prix</th>
-          
+          <th scope="col">Categorie</th>
+          <th scope="col">choix</th>
         </tr>
       </thead>
       <tbody>
@@ -13,6 +17,7 @@
           <th scope="row">{{ item.id }}</th>
           <td>{{ item.LIB_ART }}</td>
           <td>{{ item.prix }}</td>
+          <td>{{ item.categorie.LIB_CAT}}</td>
           <td>
             <a class="btn btn-primary" [routerLink]="['/article/edit', item.id]">Edit</a>
           </td>

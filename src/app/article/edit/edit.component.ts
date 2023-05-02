@@ -11,10 +11,12 @@ import { ArticleService } from '../article.service';
 export class EditComponent implements OnInit {
 
   articleForm: Article = {
-      id: 0,
-      LIB_ART: "",
-        prix: 0,
-      
+    id: 0,
+    LIB_ART: "",
+      prix: 0,
+    categorie:{ID_CAT:0,
+      LIB_CAT: ""
+    }
     }; 
 
   constructor(
