@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ArticleModule } from './article/article.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { ClientModule } from './client/client.module';
 
 
 
@@ -20,7 +21,8 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     ArticleModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -46,7 +46,11 @@
       "ID_CAT": 2,
       "LIB_CAT": "banna"
     }
-  ],
+  ],"Client": [
+    {
+      "ID_CLT": 1,
+      "NOM": "ali"
+    }],
   "posts": [
     {
       "id": 1,
