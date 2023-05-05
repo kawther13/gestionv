@@ -20,9 +20,9 @@
       </div>
       <div class="mb-3" >
         <label for="txtIdCategory" class="form-label">Categorie</label>
-        <select type="number" name="idcategory" [(ngModel)] = "articleForm.categorie.ID_CAT" class="form-control" id="txtIdCategory" >
+        <select type="number" name="idcategory"  [(ngModel)] = "articleForm.categorie.LIB_CAT"  class="form-control" id="txtIdCategory" >
              
-          <option *ngFor="let item of allcategories" value={{item.ID_CAT}}> {{item.LIB_CAT}} </option>
+          <option *ngFor="let item of allcategories"  value={{item.LIB_CAT}}  [(ngModel)] = "articleForm.categorie.ID_CAT" > {{item.LIB_CAT}} </option>
           </select>
       <!-- <input type="number" name="idcategory" [(ngModel)] = "fruitForm.category.id" class="form-control" id="txtIdCategory" />-->
       </div>      

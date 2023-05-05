@@ -7,6 +7,7 @@ import { ArticleModule } from './article/article.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ClientModule } from './client/client.module';
+import { CommandeModule } from './commande/commande.module';
 
 
 
@@ -22,7 +23,8 @@ import { ClientModule } from './client/client.module';
     ArticleModule,
     HttpClientModule,
     FormsModule,
-    ClientModule
+    ClientModule,
+    CommandeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
