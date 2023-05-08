@@ -6,6 +6,7 @@ import { HomeComponent } from './article/home/home.component';
 import { CreatecltComponent } from './client/createclt/createclt.component';
 import { EditcltComponent } from './client/editclt/editclt.component';
 import { HomecltComponent } from './client/homeclt/homeclt.component';
+import { CommandComponent } from './command/command/command.component';
 
 
 const routes: Routes = [
@@ -18,7 +19,7 @@ const routes: Routes = [
   component: HomeComponent,
 },
 
-{ path: 'article/create', component: CreateComponent},
+{path: 'article/create', component: CreateComponent},
 {path:'article/edit/:id', component: EditComponent},
 {path: 'client/create',component: CreatecltComponent}
 ,{path:'client/edit/:id', component: EditcltComponent},
@@ -26,6 +27,7 @@ const routes: Routes = [
   path: 'client/home',
   component: HomecltComponent,
 },
+{path:'command', component: CommandComponent}
 ]
 //{path:'home' HomeComponent:'article/home'}];
 
